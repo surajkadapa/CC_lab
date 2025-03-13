@@ -6,7 +6,7 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM',
                     branches: [[name: '*/main']],
-                    userRemoteConfigs: [[url: 'https://github.com/surajkadapa/CC_lab/']]
+                    userRemoteConfigs: [[url: 'https://gihub.com/surajkadapa/CC_lab/']]
                 ])
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 build 'PES2UG22CS249-1'
                 sh 'g++ main.cpp -o output'
-            
+            }
         }
 
         stage('Test') {
