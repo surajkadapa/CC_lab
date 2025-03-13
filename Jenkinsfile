@@ -33,7 +33,7 @@ pipeline {
 
     post {
         failure {
-            error 'Pipeline failed'
+           echo 'error Pipeline failed'
         }
     }
 }
